@@ -1,0 +1,69 @@
+.mycarousel {
+    height: 100%;
+
+    .carousel-indicators {
+        margin: 0;
+        bottom: -40px;
+
+        button {
+            width: 40px;
+            height: 1px;
+            opacity: 1;
+            border: none;
+            
+
+            background: var(--unnamed, #E4E5E6);
+
+            &.active {
+                background-color: #DCB658;
+            }
+        }
+    }
+
+    .carousel-inner {
+        height: 100%;
+
+        .carousel-item {
+            height: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .mycarousel {
+        height: 100%;
+
+        .carousel-indicators {
+            margin: 0;
+            bottom: -40px;
+
+            button {
+                width: 40px;
+                height: 1px;
+                opacity: 1;
+
+                background: var(--unnamed, #E4E5E6);
+
+                &.active {
+                    background-color: #DCB658;
+                }
+            }
+        }
+
+        .carousel-inner {
+            height: 100%;
+
+            .carousel-item {
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

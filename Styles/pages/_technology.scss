@@ -1,0 +1,263 @@
+.technology_info {
+    background: var(--unnamed, #F8F9FA);
+    padding: 27px 0 100px;
+    @media screen and (max-width:576px) {
+       
+        padding-bottom: 0;
+        
+    }
+
+    .technology_container{
+        @media screen and (max-width:576px) {
+    padding: 0;
+        }
+    
+
+        .technology_card {
+            padding: 30px;
+            border-radius: 3px;
+            border: 1px solid var(--unnamed, #E4E5E6);
+            background: var(--unnamed, #FFF);
+            box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.10);
+
+            @media screen and (max-width:576px) {
+    border-radius: 0;
+    padding: 16px 20px 20px;
+            }
+            .content_title {
+                color: var(--2, #1C1D1E);
+                font-family: 'Roboto', sans-serif;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+                letter-spacing: 0.68px;
+                margin-bottom: 6px;
+                @media screen and (max-width:576px) {
+                    font-size: 18px;
+                line-height: 200%;
+                margin-bottom: 14px;
+                    
+                }
+                &.carousel_title{
+                    display: none;
+                    @media screen and (max-width:576px) {
+                        display: block;
+                        
+                    }
+                }
+                &.technology_content_title{
+                    @media screen and (max-width:576px) {
+                        display: none;
+                    }
+                    
+                }
+            }
+            .technology_carousel {
+                @media screen and (max-width:576px) {
+                    margin-bottom: 10px;
+                    
+                }
+                .carousel {
+                    .carousel-inner {
+                        border-radius: 5px;
+                        overflow: hidden;
+
+                        .carousel-item {
+
+                            img {
+                                height: 477px;
+                                object-fit: cover;
+                                @media screen and (max-width:576px) {
+                                   
+height: 210px;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .carousel-indicators {
+                        position: relative;
+                        width: 100%;
+                        margin: 0;
+
+                        .active {
+                            div {
+                                background-color: #dcb758a3;
+
+                            }
+                        }
+
+                        .techno_btn {
+
+                            text-indent: 0;
+                            width: 20%;
+                            position: relative;
+                            height: auto;
+                            opacity: 1;
+
+                            div {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+
+                            }
+
+                            img {
+                                max-width: 100%;
+                                height: 84px;
+                                object-fit: cover;
+                                border-radius: 3px;
+border: 1px solid var(--unnamed, #E4E5E6);
+                                @media screen and (max-width:576px) {
+    height: 36px;
+    
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .technology_content {
+     
+
+                .content_description {
+                    color: var(--2, #1C1D1E);
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: 0.48px;
+                    margin-bottom: 9px;
+                    @media screen and (max-width:576px) {
+                     
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+                }
+
+                .content_items {
+                    margin-bottom: 52px;
+                    @media screen and (max-width:576px) {
+                    margin-bottom: 20px;
+                        
+                    }
+
+                    .content_item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #E4E5E6;
+                        padding-bottom: 3px;
+                        @media screen and (max-width:576px) {
+                            margin-bottom: 10px;
+                            padding: 0;
+                            
+                        }
+                        span {
+                            color: var(--2, #1C1D1E);
+                            text-align: center;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%;
+                            letter-spacing: 0.36px;
+                            &:nth-child(2){
+                                font-weight: 700;
+                            }
+                            @media screen and (max-width:576px) {
+                                font-size: 11px ;
+                                
+                                
+                            }
+                        }
+
+                    }
+                }
+
+                .content_prices {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    column-gap: 30px;
+                    margin-bottom: 30px;
+                    @media screen and (max-width:576px) {
+                       column-gap: 10px;
+                        margin-bottom: 20px;
+                    }
+
+                    .price_item {
+                        border-radius: 3px;
+                        border: 1px solid var(--unnamed, #E4E5E6);
+                        background: var(--unnamed, #FFF);
+                        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.10);
+                        padding: 13px 0 9px;
+                        text-align: center;
+                        width: 50%;
+                        @media screen and (max-width:576px) {
+                            padding: 8px 0 8px;
+                           
+                            
+                        }
+
+                        span {
+                            color: var(--2, #1C1D1E);
+                            text-align: center;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%;
+                            letter-spacing: 0.36px;
+  
+                            @media screen and (max-width:576px) {
+                                font-size: 11px ;
+                                
+                                
+                            }
+                        }
+                        p{
+                            color: var(--2, #1C1D1E);
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+letter-spacing: 0.68px;
+@media screen and (max-width:576px) {
+    font-size: 14px ;
+    
+    
+}
+                        }
+
+      
+
+                    }
+
+
+                }
+
+                .technology_button {
+                    @include my_btn;
+                    padding-top: 31px;
+                    width: 100%;
+                    padding-bottom: 31px;
+                    @media screen and (max-width:576px) {
+                       padding: 15px 11px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

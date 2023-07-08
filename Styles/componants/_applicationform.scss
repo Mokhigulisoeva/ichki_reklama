@@ -1,0 +1,99 @@
+.application_form{
+    padding: 25px 30px 30px;
+    background-color: #fff;
+    border-radius: 3px;
+border: 1px solid var(--unnamed, #E4E5E6);
+background: var(--unnamed, #FFF);
+box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.10);
+
+.free_form_title{
+    color: var(--2, #1C1D1E);
+text-align: center;
+font-size: 18px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+letter-spacing: 0.54px;
+text-transform: uppercase;
+margin-bottom: 11px;
+}
+.free_hr{
+    width: 100px;
+    height: 1px;
+    background: var(--unnamed, #E4E5E6);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.free_forum{
+    .free_item{
+        display: flex;
+        align-items: center;
+        column-gap: 18px;
+        padding-left: 20px;
+        border-radius: 3px;
+border: 1px solid var(--unnamed, #E4E5E6);
+background: var(--unnamed, #F8F9FA);
+margin-bottom: 20px;
+
+input{
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+    }
+    .free_btn{
+        @include my_btn;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .free_confirm{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        input{
+            accent-color: #bb9b4b;
+        }
+        label{
+            color: var(--1, #A8A9AA);
+font-size: 11px;
+font-family: PF DinDisplay Pro;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: 0.22px;
+        }
+    }
+}
+}
+@media  screen and (max-width:576px) {
+    .application_form{
+        margin-top: 20px;
+        padding: 12px 20px 20px;
+        .free_form_title{
+            font-size: 14px;
+            line-height: 120%;
+            margin-bottom: 5px;
+        }
+        .free_forum{
+            .free_item{
+                padding-left: 12px;
+                .form_name{
+                    svg{
+                        width: 16px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .free_btn{
+                margin-bottom: 21px;
+            }
+            .free_confirm{
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

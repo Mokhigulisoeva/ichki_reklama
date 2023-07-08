@@ -1,0 +1,49 @@
+@mixin my_btn {
+    color: var(--2, #1C1D1E);
+    text-align: center;
+    text-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.50);
+    font-size: 18px;
+    font-family: PF DinDisplay Pro;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    padding: 22px 40px 20px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: var(--unnamed, linear-gradient(180deg, #E0BD69 0%, #BB9B4B 100%));
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.10) inset;
+    @media screen and (max-width:576px) {
+        font-size: 11px;
+        line-height: 100%;
+        display: block;
+        width: 100%;
+    }
+}
+
+@mixin borderedtext {
+    position: relative;
+    padding-left: 20px;
+
+    font-size: 44px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1.32px;
+    text-transform: uppercase;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 4px;
+        background: var(--unnamed, #DCB658);
+
+    }
+    @media screen and (max-width:576px) {
+        font-size: 18px;
+line-height: 130%;
+    }
+}

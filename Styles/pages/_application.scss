@@ -1,0 +1,34 @@
+.application{
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    .container{
+.application_wrapper{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 30px;
+    .application_element{
+        width: 35% !important;
+        margin-bottom: 0 !important;
+    }
+}
+.free_confirm{
+    justify-content: center;
+}
+    }
+}
+@media screen and (max-width:576px) {
+    .application{
+        padding: 40px 0;
+        .container{
+            .application_wrapper{
+                flex-direction: column;
+                width: 100%;
+                row-gap: 20px;
+                .application_element{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    
+}

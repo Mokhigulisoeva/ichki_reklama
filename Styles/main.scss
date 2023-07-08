@@ -1,0 +1,66 @@
+
+.my_breadcrumb {
+    margin-bottom: 24px;
+
+    .breadcrumb-item {
+        line-height: 14px;
+
+        a {
+            color: #A8A9AA;
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+
+        }
+
+        span {
+            color: #1c1d1e;
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+        }
+
+        .active {
+            &::before {
+                font-size: 11px;
+                line-height: 14px;
+            }
+        }
+
+    }
+}
+
+
+@import "mixins";
+@import "pages/header";
+@import "pages/technologies";
+@import "pages/free";
+@import "pages/information";
+@import "pages/application";
+@import "pages/maps";
+@import "pages/footer";
+@import "pages/our_technologies";
+@import "pages/technology";
+@import "pages/our_works";
+@import "pages/contacts";
+
+
+a{
+    text-decoration: none
+}
+
+
+
+
+
+
+
+//componants
+@import "componants/carousel";
+@import "componants/applicationform";

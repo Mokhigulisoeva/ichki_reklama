@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Styles/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./Styles/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <svg width="154" height="60" viewBox="0 0 154 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M153.751 -1.90735e-05H11.2504V37.5002H153.751V-1.90735e-05Z" fill="#1C1D1E" />
+            <path d="M142.501 30H0V60H142.501V30Z" fill="#DCB658" />
+            <g filter="url(#filter0_d_1488_1585)">
+              <path
+                d="M19.2476 44.0283H21.3543C21.8941 44.0283 22.2776 43.8899 22.5057 43.617C22.7338 43.344 22.8474 43.0143 22.8474 42.6239C22.8474 42.2344 22.7368 41.9038 22.5147 41.6308C22.2926 41.3579 21.9061 41.2205 21.3543 41.2205H19.2476V44.0283ZM21.8125 38.6815C22.5117 38.6815 23.1063 38.7931 23.6004 39.0152C24.0934 39.2373 24.4948 39.5342 24.8066 39.9057C25.1223 40.2782 25.3494 40.6985 25.4939 41.1657C25.6383 41.6338 25.71 42.1199 25.71 42.6239C25.71 43.1279 25.6233 43.614 25.449 44.0821C25.2747 44.5503 25.0138 44.9696 24.6721 45.3421C24.3295 45.7136 23.9101 46.0115 23.4181 46.2326C22.9231 46.4547 22.3593 46.5663 21.7198 46.5663H19.2476V51.0843H16.386V38.6815H21.8125ZM31.6504 38.6815H40.3081V41.2205H34.5121V43.5602H39.4625V46.0981H34.5121V48.5464H40.3081V51.0843H31.6504V38.6815ZM46.896 51.0843V38.6815H49.7586V43.5064H50.676C51.2039 43.5064 51.6212 43.4068 51.927 43.2086C52.2328 43.0114 52.4818 42.6179 52.674 42.0302L53.7358 38.6815H56.7061L55.5905 42.3002C55.3982 42.9118 55.1522 43.4217 54.8524 43.8301C54.5526 44.2385 54.21 44.5084 53.8265 44.6399C54.3424 44.8082 54.7438 45.1051 55.0327 45.5314C55.3206 45.9567 55.5546 46.4756 55.7339 47.0882L56.9222 51.0843H53.7727L52.7826 47.5205C52.6143 46.9079 52.3683 46.5095 52.0445 46.3232C51.7198 46.137 51.2945 46.0443 50.7666 46.0443H49.7586V51.0843H46.896ZM67.1277 41.2563V44.2076C67.1277 45.1798 67.0769 46.0862 66.9753 46.9258C66.8737 47.7665 66.6606 48.5036 66.3359 49.14C66.0121 49.7765 65.541 50.2865 64.9235 50.67C64.3049 51.0545 63.4742 51.2706 62.4303 51.3184L61.9981 49.0145C62.5618 48.8701 63.0001 48.6689 63.3118 48.4109C63.6246 48.153 63.8557 47.8352 64.0051 47.4567C64.1555 47.0792 64.2451 46.635 64.275 46.125C64.3049 45.615 64.3198 45.0304 64.3198 44.37V38.6815H72.7624V51.0843H69.8639V41.2563H67.1277ZM86.5327 48.636H82.5366L81.7985 51.0843H78.7207L83.0944 38.6815H86.0467L90.3486 51.0843H87.2887L86.5327 48.636ZM83.2567 46.2963H85.8126L85.5606 45.4497L84.5705 42.0302H84.4988L83.5087 45.4497L83.2567 46.2963ZM105.721 45.3063L104.55 47.5384L103.471 49.4279H101.437L100.339 47.4657L99.2224 45.3242H99.1507V51.0843H96.288V38.6815H98.9166L100.968 42.7145L102.427 45.6658H102.534L104.046 42.606L106.008 38.6815H108.637V51.0843H105.774V45.3063H105.721ZM122.299 48.636H118.303L117.565 51.0843H114.487L118.861 38.6815H121.813L126.115 51.0843H123.055L122.299 48.636ZM119.023 46.2963H121.579L121.327 45.4497L120.337 42.0302H120.265L119.275 45.4497L119.023 46.2963Z"
+                fill="#1C1D1E" />
+            </g>
+            <path
+              d="M27.4013 13.8749L22.6491 21.2009H20.0933V8.79908H22.9549V16.2336H23.0097L27.7857 8.79908H30.3536V21.2009H27.4909V13.8749H27.4013ZM39.8051 21.2009V16.1788H35.8448V21.2009H32.9831V8.79908H35.8448V13.605H39.8051V8.79908H42.7036V21.2009H39.8051ZM50.4449 11.3729V21.2009H47.5832V11.3729H44.4327V8.79908H53.5774V11.3729H50.4449ZM55.3066 8.79908H63.9652V11.337H58.1692V13.6767H63.1186V16.2147H58.1692V18.6629H63.9652V21.2009H55.3066V8.79908ZM69.1865 14.1449H71.2932C71.833 14.1449 72.2165 14.0074 72.4446 13.7345C72.6727 13.4616 72.7872 13.1309 72.7872 12.7414C72.7872 12.351 72.6757 12.0213 72.4536 11.7484C72.2324 11.4755 71.845 11.337 71.2932 11.337H69.1865V14.1449ZM71.7524 8.79908C72.4506 8.79908 73.0452 8.91063 73.5403 9.13176C74.0323 9.35388 74.4337 9.6507 74.7465 10.0232C75.0612 10.3947 75.2893 10.8151 75.4328 11.2832C75.5772 11.7514 75.6489 12.2374 75.6489 12.7414C75.6489 13.2454 75.5622 13.7315 75.3879 14.1997C75.2136 14.6668 74.9527 15.0871 74.611 15.4587C74.2694 15.8312 73.849 16.128 73.357 16.3501C72.8619 16.5722 72.2982 16.6828 71.6587 16.6828H69.1865V21.2009H66.3249V8.79908H71.7524ZM80.2228 18.6629H82.4728C82.9888 18.6629 83.3912 18.5285 83.679 18.2556C83.9669 17.9856 84.1113 17.6549 84.1113 17.2685C84.1113 16.881 83.9699 16.5513 83.688 16.2814C83.4061 16.0085 83.0007 15.873 82.4728 15.873H80.2228V18.6629ZM77.3611 21.2009V8.79908H80.2228V13.3351H82.7965C84.0814 13.3351 85.0835 13.6797 85.8026 14.373C86.5228 15.0632 86.8833 16.0234 86.8833 17.2506C86.8833 17.7057 86.8106 18.1709 86.6672 18.639C86.5228 19.1072 86.2947 19.5335 85.9829 19.911C85.6711 20.2895 85.2628 20.6013 84.7588 20.8413C84.2548 21.0814 83.6372 21.2009 82.9051 21.2009H77.3611ZM88.7928 8.79908H97.4514V11.337H91.6544V13.6767H96.6048V16.2147H91.6544V18.6629H97.4514V21.2009H88.7928V8.79908ZM102.673 14.1449H104.778C105.319 14.1449 105.703 14.0074 105.931 13.7345C106.159 13.4616 106.272 13.1309 106.272 12.7414C106.272 12.351 106.162 12.0213 105.94 11.7484C105.718 11.4755 105.331 11.337 104.778 11.337H102.673V14.1449ZM105.238 8.79908C105.937 8.79908 106.53 8.91063 107.025 9.13176C107.517 9.35388 107.92 9.6507 108.232 10.0232C108.547 10.3947 108.774 10.8151 108.919 11.2832C109.063 11.7514 109.135 12.2374 109.135 12.7414C109.135 13.2454 109.047 13.7315 108.874 14.1997C108.7 14.6668 108.439 15.0871 108.097 15.4587C107.755 15.8312 107.335 16.128 106.843 16.3501C106.348 16.5722 105.783 16.6828 105.145 16.6828H102.673V21.2009H99.811V8.79908H105.238ZM117.669 21.2009V16.1788H113.709V21.2009H110.847V8.79908H113.709V13.605H117.669V8.79908H120.567V21.2009H117.669ZM130 18.7536H126.005L125.267 21.2009H122.189L126.563 8.79908H129.515L133.817 21.2009H130.756L130 18.7536ZM126.725 16.4129H129.281L129.029 15.5672L128.039 12.1468H127.966L126.976 15.5672L126.725 16.4129ZM144.907 8.79908V21.2009H142.045V16.5035H141.09C140.563 16.5035 140.149 16.5961 139.849 16.7824C139.548 16.9677 139.314 17.3671 139.147 17.9797L138.247 21.2009H135.024L136.087 17.889C136.219 17.4567 136.372 17.0613 136.546 16.7007C136.72 16.3412 136.999 16.0533 137.383 15.8372C137.01 15.7176 136.696 15.5403 136.438 15.3063C136.18 15.0722 135.973 14.8053 135.817 14.5054C135.661 14.2056 135.55 13.8899 135.484 13.5602C135.418 13.2305 135.385 12.9148 135.385 12.6149C135.385 12.1587 135.46 11.7036 135.61 11.2474C135.759 10.7912 135.991 10.3828 136.303 10.0232C136.615 9.66265 137.016 9.36882 137.509 9.14072C138.001 8.91362 138.582 8.79908 139.255 8.79908H144.907ZM142.045 11.337H139.849C139.308 11.337 138.922 11.4665 138.688 11.7275C138.454 11.9854 138.337 12.3271 138.337 12.7504C138.337 13.1369 138.454 13.4437 138.688 13.6648C138.922 13.8899 139.29 14.0014 139.794 14.0014H142.045V11.337Z"
+              fill="white" />
+            <defs>
+              <filter id="filter0_d_1488_1585" x="16.386" y="38.6815" width="109.729" height="13.6369"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset dy="1" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1585" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1585" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar__links">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">
+                <img src="./Images/header_images/иконка.png" alt="">
+                <span>главная</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="technologies.html">
+                <img src="./Images/header_images/иконка (1).png" alt="">
+                <span>технологии</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="our_works.html">
+                <img src="./Images/header_images/иконка (2).png" alt="">
+                <span>Наши работы</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">
+                <img src="./Images/header_images/иконка (3).png" alt="">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+          <div class="contact">
+            <div class="contact_numbers">
+              <a href="tel:++7(917)236-65-74">+7 (917) 236-65-74</a>
+              <a href="tel:++7(917)236-65-74">+7 (917) 236-65-74</a>
+            </div>
+            <div class="contact_border"></div>
+            <div class="contact_social">
+              <a class="email_address" href="mailto:pochta@mail.ru">pochta@mail.ru</a>
+              <div class="social_links">
+                <a href="">
+                  <img src="./Images/header_images/1.svg" alt=""></a>
+                <a href="">
+                  <img src="./Images/header_images/2.svg" alt=""></a>
+                <a href="">
+                  <img src="./Images/header_images/3.svg" alt=""></a>
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="container">
+        <div class="hero_wrapper">
+          <div class="hero_content">
+            <h2 class="hero_title">
+              логотипы на стену
+            </h2>
+            <div class="hero_items">
+              <div class="form-check hero_item   ">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="16" height="16" rx="3" fill="#DCB658"/>
+                  <g filter="url(#filter0_d_1488_1514)">
+                  <path d="M11 3.99982L6.2002 8.79962L4.59961 7.19903L3 8.79962L6.2002 11.9998L12.5996 5.59943L11 3.99982Z" fill="#1C1D1E"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d_1488_1514" x="3" y="3.99982" width="9.59961" height="9" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="1"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1514"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1514" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>
+                <label class="form-check-label" for="flexCheckDefault">
+                  Интерьерное качество
+                </label>
+              </div>
+              <div class="form-check hero_item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="16" height="16" rx="3" fill="#DCB658"/>
+                  <g filter="url(#filter0_d_1488_1514)">
+                  <path d="M11 3.99982L6.2002 8.79962L4.59961 7.19903L3 8.79962L6.2002 11.9998L12.5996 5.59943L11 3.99982Z" fill="#1C1D1E"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d_1488_1514" x="3" y="3.99982" width="9.59961" height="9" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="1"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1514"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1514" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>
+                <label class="form-check-label" for="flexCheckDefault">
+                  На рынке 8 лет
+                </label>
+              </div>
+              <div class="form-check hero_item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="16" height="16" rx="3" fill="#DCB658"/>
+                  <g filter="url(#filter0_d_1488_1514)">
+                  <path d="M11 3.99982L6.2002 8.79962L4.59961 7.19903L3 8.79962L6.2002 11.9998L12.5996 5.59943L11 3.99982Z" fill="#1C1D1E"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d_1488_1514" x="3" y="3.99982" width="9.59961" height="9" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="1"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1514"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1514" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>
+                <label class="form-check-label" for="flexCheckDefault">
+                  Гарантия 3 года
+                </label>
+              </div>
+
+
+            </div>
+            <button class="hero_button">
+              заказать обратный звонок
+            </button>
+          </div>
+          <div class="hero_carousel">
+            <div id="carouselExampleIndicators" class="carousel slide mycarousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-1 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-2 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-3 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-4 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-5 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-6 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-7 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" class="d-block w-100"
+                    alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_1488_1535)">
+                    <rect width="40" height="40" rx="3" transform="matrix(-1 0 0 1 50 8)"
+                      fill="url(#paint0_linear_1488_1535)" />
+                    <rect x="-0.5" y="0.5" width="39" height="39" rx="2.5" transform="matrix(-1 0 0 1 49 8)"
+                      stroke="#E4E5E6" />
+                  </g>
+                  <path
+                    d="M29.7992 28.0254L33.9165 23.9082L31.9248 22L26 27.9248L32.0586 34L33.9497 32.1256L29.7992 28.0254Z"
+                    fill="#1C1D1E" />
+                  <defs>
+                    <filter id="filter0_d_1488_1535" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset dy="2" />
+                      <feGaussianBlur stdDeviation="5" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1535" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1535" result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear_1488_1535" x1="20" y1="0" x2="20" y2="40"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="#F3F4F5" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_1488_1532)">
+                    <rect x="10" y="8" width="40" height="40" rx="3" fill="url(#paint0_linear_1488_1532)" />
+                    <rect x="10.5" y="8.5" width="39" height="39" rx="2.5" stroke="#E4E5E6" />
+                  </g>
+                  <path
+                    d="M30.2008 28.0254L26.0835 23.9082L28.0752 22L34 27.9248L27.9414 34L26.0503 32.1256L30.2008 28.0254Z"
+                    fill="#1C1D1E" />
+                  <defs>
+                    <filter id="filter0_d_1488_1532" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feOffset dy="2" />
+                      <feGaussianBlur stdDeviation="5" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1532" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1532" result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear_1488_1532" x1="30" y1="8" x2="30" y2="48"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="#F3F4F5" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <section class="technologies">
+    <div class="container">
+      <h2 class="technologies_title">
+        технологии
+      </h2>
+      <div class="row row-gap-sm-4 row-gap-2">
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-1 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-2 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-3 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-4 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-5 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-6 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-7 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-9 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-10 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-11 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4">
+          <a class="technology">
+            <div class="technology_img_wrapper">
+              <img class="technology_image" src="./Images/header_images/carousel_images/logotipnastenu-12 1.png" alt="">
+              <div class="img_mask_wrapper">
+                <div class="img_mask"></div>
+              </div>
+            </div>
+            <p class="technology_title">
+              Объемный логотип с подсветкой
+            </p>
+            <div class="techno_hr"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="free">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-8">
+          <h2 class="free_title">
+            бесплатный эскиз
+          </h2>
+          <img src="./Images/our_dizayn/8 2.png" alt="" class="free_img">
+        </div>
+        <div class="col-lg-4">
+          <div class="free_form application_form">
+            <h3 class="free_form_title">
+              Получите подробную смету
+              по изготовлении вывески
+            </h3>
+            <div class="free_hr"></div>
+            <form action="" class="free_forum">
+              <div class="free_item">
+                <label for="form_name">
+                  <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.42105 2.10514C6.67699 2.10514 5.26316 3.51898 5.26316 5.26304C5.26316 7.00709 6.67699 8.42093 8.42105 8.42093C10.1651 8.42093 11.5789 7.00709 11.5789 5.26304C11.5789 3.51898 10.1651 2.10514 8.42105 2.10514ZM3.1579 5.26304C3.1579 2.35627 5.51429 -0.00012207 8.42105 -0.00012207C11.3278 -0.00012207 13.6842 2.35627 13.6842 5.26304C13.6842 8.16981 11.3278 10.5262 8.42105 10.5262C5.51429 10.5262 3.1579 8.1698 3.1579 5.26304ZM6.31579 13.6841C3.99039 13.6841 2.10526 15.5692 2.10526 17.8946V18.9472C2.10526 19.5286 1.63398 19.9999 1.05263 19.9999C0.471279 19.9999 0 19.5286 0 18.9472V17.8946C0 14.4065 2.82768 11.5788 6.31579 11.5788H10.5263C14.0144 11.5788 16.8421 14.4065 16.8421 17.8946V18.9472C16.8421 19.5286 16.3708 19.9999 15.7895 19.9999C15.2081 19.9999 14.7368 19.5286 14.7368 18.9472V17.8946C14.7368 15.5692 12.8517 13.6841 10.5263 13.6841H6.31579Z"
+                      fill="#1C1D1E" />
+                  </svg>
+
+                </label>
+                <input type="text" id="form_name" placeholder="Ваше имя">
+              </div>
+              <div class="free_item">
+                <label for="form_contact">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12.3124 0.684359C12.3593 0.262126 12.7396 -0.0421363 13.1618 0.00477114C14.9307 0.201279 16.5001 1.05488 17.723 2.27629C18.9475 3.49923 19.7966 5.07045 19.9951 6.83718C20.0426 7.25935 19.7388 7.64006 19.3166 7.6875C18.8944 7.73495 18.5137 7.43117 18.4663 7.009C18.3118 5.6346 17.6479 4.37557 16.6359 3.36482C15.6223 2.35255 14.3646 1.68631 12.992 1.53381C12.5697 1.48691 12.2655 1.10659 12.3124 0.684359ZM6.13628 1.80103C5.93629 1.62938 5.68032 1.53597 5.41607 1.53857C5.41355 1.5386 5.41103 1.53861 5.40851 1.53861H2.62417C2.01013 1.53938 1.48726 2.10791 1.54264 2.71959C1.54475 2.74286 1.5458 2.76621 1.54578 2.78956C1.53887 11.5621 8.37562 18.4611 17.2059 18.4542C17.2292 18.4542 17.2525 18.4552 17.2757 18.4573C17.8949 18.5132 18.4633 17.9847 18.4609 17.3737L18.4609 17.3706V14.5914C18.4609 14.588 18.4609 14.5845 18.4609 14.581C18.461 14.5781 18.461 14.5752 18.4611 14.5723C18.4677 14.307 18.3764 14.0483 18.2042 13.8455C18.0977 13.72 17.875 13.5543 17.5156 13.382C17.1689 13.2158 16.7486 13.0688 16.3061 12.9539C15.3845 12.7144 14.5316 12.6546 14.1448 12.737C13.9089 12.7872 13.66 12.942 13.3593 13.2252C13.212 13.3638 13.0677 13.5182 12.9124 13.6875C12.8911 13.7107 12.8694 13.7344 12.8474 13.7585C12.7159 13.9023 12.5732 14.0584 12.4311 14.2002C12.1864 14.4445 11.8087 14.4954 11.508 14.3248C9.06376 12.9376 7.03985 10.9178 5.64982 8.47802C5.47814 8.17669 5.52933 7.79773 5.77481 7.55275C5.91692 7.41094 6.0733 7.26849 6.21741 7.13723C6.2415 7.11528 6.26525 7.09365 6.28853 7.07239C6.45816 6.91746 6.61282 6.77336 6.75177 6.62641C7.03569 6.32612 7.1903 6.07811 7.2404 5.84367C7.32251 5.4594 7.26319 4.6124 7.02475 3.69524C6.91032 3.25506 6.76404 2.83652 6.59862 2.49075C6.42724 2.13252 6.26201 1.90895 6.13628 1.80103ZM5.40505 0.000160025C6.0403 -0.00509612 6.65617 0.219838 7.13827 0.633625C7.49808 0.942449 7.77509 1.38506 7.98643 1.82682C8.20373 2.28104 8.38065 2.79632 8.51371 3.30815C8.77026 4.295 8.90308 5.4248 8.74488 6.16515C8.60736 6.80873 8.22562 7.30688 7.86965 7.68336C7.68865 7.8748 7.49749 8.05175 7.32606 8.20833C7.31626 8.21728 7.30654 8.22615 7.2969 8.23494C8.42608 10.0325 9.94863 11.5518 11.7503 12.6785C11.7596 12.6684 11.769 12.6581 11.7785 12.6477C11.9354 12.4766 12.1127 12.2858 12.3046 12.1052C12.6819 11.7498 13.1807 11.3693 13.8245 11.2322C14.5664 11.0743 15.7013 11.2072 16.693 11.4649C17.2072 11.5984 17.7248 11.7762 18.1807 11.9947C18.6239 12.2072 19.0684 12.4863 19.377 12.8498L19.377 12.8499C19.7913 13.3379 20.0127 13.9604 19.9993 14.6002V17.369C20.0045 18.8698 18.6848 20.1068 17.1749 19.9926C7.51603 19.9834 0.0166035 12.4134 0.00733198 2.82068C-0.106823 1.31436 1.12758 0.00156253 2.62305 0.000160378L5.40505 0.000160025ZM11.8091 4.21172C11.8904 3.79475 12.2944 3.52267 12.7114 3.60402C13.576 3.77269 14.4797 4.16115 15.1593 4.84071C15.8389 5.52028 16.2273 6.42406 16.396 7.28863C16.4773 7.7056 16.2052 8.10956 15.7883 8.1909C15.3713 8.27224 14.9673 8.00016 14.886 7.58319C14.7597 6.93564 14.4813 6.33839 14.0714 5.92858C13.6616 5.51874 13.0644 5.24033 12.4168 5.114C11.9998 5.03265 11.7278 4.62869 11.8091 4.21172Z"
+                      fill="#1C1D1E" />
+                  </svg>
+
+                </label>
+                <input type="number" id="form_contact" placeholder="Номер телефона">
+              </div>
+              <button class="free_btn">заказать
+
+              </button>
+              <div class="free_confirm">
+                <input type="checkbox" id="free_confirmID">
+                <label for="free_confirmID">Согласие с политикой обработки персональных данных</label>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="information">
+    <div class="container">
+      <h4 class="information_title">
+        Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности
+      </h4>
+      <p class="information_text">
+        Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности
+        Таким образом, сплочённость команды профессионалов однозначно определяет каждого участника как способного
+        принимать собственные решения касаемо своевременного выполнения сверхзадачи! Принимая во внимание показатели
+        успешности, граница обучения кадров требует анализа первоочередных требований. Для современного мира сложившаяся
+        структура организации выявляет срочную потребность экспериментов, поражающих по своей масштабности и
+        грандиозности. Предварительные выводы неутешительны: понимание сути ресурсосберегающих технологий не оставляет
+        шанса для вывода текущих активов.
+        <br>
+        <br>
+        Равным образом, повышение уровня гражданского сознания является качественно новой ступенью укрепления моральных
+        ценностей. Вот вам яркий пример современных тенденций — дальнейшее развитие различных форм деятельности напрямую
+        зависит от переосмысления внешнеэкономических политик. Задача организации, в особенности же понимание сути
+        ресурсосберегающих технологий предопределяет высокую востребованность распределения внутренних резервов и
+        ресурсов!
+      </p>
+      <div class="information_carousel">
+        <div id="carouselExampleIndicator" class="carousel slide mycarousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-1 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+              </div>
+
+            </div>
+            <div class="carousel-item">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-2 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-3 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-4 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-5 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-6 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-7 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="images">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-8 1.png" alt="...">
+                <img src="./Images/header_images/carousel_images/logotipnastenu-1 1.png" alt="...">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator"
+            data-bs-slide="prev">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_1488_1535)">
+                <rect width="40" height="40" rx="3" transform="matrix(-1 0 0 1 50 8)"
+                  fill="url(#paint0_linear_1488_1535)" />
+                <rect x="-0.5" y="0.5" width="39" height="39" rx="2.5" transform="matrix(-1 0 0 1 49 8)"
+                  stroke="#E4E5E6" />
+              </g>
+              <path
+                d="M29.7992 28.0254L33.9165 23.9082L31.9248 22L26 27.9248L32.0586 34L33.9497 32.1256L29.7992 28.0254Z"
+                fill="#1C1D1E" />
+              <defs>
+                <filter id="filter0_d_1488_1535" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="5" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1535" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1535" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_1488_1535" x1="20" y1="0" x2="20" y2="40"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#F3F4F5" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator"
+            data-bs-slide="next">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_1488_1532)">
+                <rect x="10" y="8" width="40" height="40" rx="3" fill="url(#paint0_linear_1488_1532)" />
+                <rect x="10.5" y="8.5" width="39" height="39" rx="2.5" stroke="#E4E5E6" />
+              </g>
+              <path
+                d="M30.2008 28.0254L26.0835 23.9082L28.0752 22L34 27.9248L27.9414 34L26.0503 32.1256L30.2008 28.0254Z"
+                fill="#1C1D1E" />
+              <defs>
+                <filter id="filter0_d_1488_1532" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="5" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1488_1532" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1488_1532" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_1488_1532" x1="30" y1="8" x2="30" y2="48"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="#F3F4F5" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <p class="information_text">
+        Таким образом, сплочённость команды профессионалов однозначно определяет каждого участника как способного
+        принимать собственные решения касаемо своевременного выполнения сверхзадачи! Принимая во внимание показатели
+        успешности, граница обучения кадров требует анализа первоочередных требований. Для современного мира сложившаяся
+        структура организации выявляет срочную потребность экспериментов, поражающих по своей масштабности и
+        грандиозности. Предварительные выводы неутешительны: понимание сути ресурсосберегающих технологий не оставляет
+        шанса для вывода текущих активов.
+        <br> <br> Равным образом, повышение уровня гражданского сознания является качественно новой ступенью укрепления
+        моральных ценностей. Вот вам яркий пример современных тенденций — дальнейшее развитие различных форм
+        деятельности напрямую зависит от переосмысления внешнеэкономических политик. Задача организации, в особенности
+        же понимание сути ресурсосберегающих технологий предопределяет высокую востребованность распределения внутренних
+        резервов и ресурсов!
+        <br> <br> Таким образом, сплочённость команды профессионалов однозначно определяет каждого участника как
+        способного принимать собственные решения касаемо своевременного выполнения сверхзадачи! Принимая во внимание
+        показатели успешности, граница обучения кадров требует анализа первоочередных требований. Для современного мира
+        сложившаяся структура организации выявляет срочную потребность экспериментов, поражающих по своей масштабности и
+        грандиозности. Предварительные выводы неутешительны: понимание сути ресурсосберегающих технологий не оставляет
+        шанса для вывода текущих активов.
+        <br> <br> Равным образом, повышение уровня гражданского сознания является качественно новой ступенью укрепления
+        моральных ценностей. Вот вам яркий пример современных тенденций — дальнейшее развитие различных форм
+        деятельности напрямую зависит от переосмысления внешнеэкономических политик. Задача организации, в особенности
+        же понимание сути ресурсосберегающих технологий предопределяет высокую востребованность распределения внутренних
+        резервов и ресурсов!
+      </p>
+    </div>
+  </section>
+
+  <section class="application">
+    <div class="container">
+      <div class="application_form">
+        <h3 class="free_form_title">
+          Получите подробную смету
+          по изготовлении вывески
+        </h3>
+        <div class="free_hr"></div>
+        <form action="" class="free_forum">
+          <div class="application_wrapper">
+            <div class="free_item application_element">
+              <label for="form_name">
+                <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8.42105 2.10514C6.67699 2.10514 5.26316 3.51898 5.26316 5.26304C5.26316 7.00709 6.67699 8.42093 8.42105 8.42093C10.1651 8.42093 11.5789 7.00709 11.5789 5.26304C11.5789 3.51898 10.1651 2.10514 8.42105 2.10514ZM3.1579 5.26304C3.1579 2.35627 5.51429 -0.00012207 8.42105 -0.00012207C11.3278 -0.00012207 13.6842 2.35627 13.6842 5.26304C13.6842 8.16981 11.3278 10.5262 8.42105 10.5262C5.51429 10.5262 3.1579 8.1698 3.1579 5.26304ZM6.31579 13.6841C3.99039 13.6841 2.10526 15.5692 2.10526 17.8946V18.9472C2.10526 19.5286 1.63398 19.9999 1.05263 19.9999C0.471279 19.9999 0 19.5286 0 18.9472V17.8946C0 14.4065 2.82768 11.5788 6.31579 11.5788H10.5263C14.0144 11.5788 16.8421 14.4065 16.8421 17.8946V18.9472C16.8421 19.5286 16.3708 19.9999 15.7895 19.9999C15.2081 19.9999 14.7368 19.5286 14.7368 18.9472V17.8946C14.7368 15.5692 12.8517 13.6841 10.5263 13.6841H6.31579Z"
+                    fill="#1C1D1E" />
+                </svg>
+
+              </label>
+              <input type="text" id="form_name" placeholder="Ваше имя">
+            </div>
+            <div class="free_item application_element">
+              <label for="form_contact">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.3124 0.684359C12.3593 0.262126 12.7396 -0.0421363 13.1618 0.00477114C14.9307 0.201279 16.5001 1.05488 17.723 2.27629C18.9475 3.49923 19.7966 5.07045 19.9951 6.83718C20.0426 7.25935 19.7388 7.64006 19.3166 7.6875C18.8944 7.73495 18.5137 7.43117 18.4663 7.009C18.3118 5.6346 17.6479 4.37557 16.6359 3.36482C15.6223 2.35255 14.3646 1.68631 12.992 1.53381C12.5697 1.48691 12.2655 1.10659 12.3124 0.684359ZM6.13628 1.80103C5.93629 1.62938 5.68032 1.53597 5.41607 1.53857C5.41355 1.5386 5.41103 1.53861 5.40851 1.53861H2.62417C2.01013 1.53938 1.48726 2.10791 1.54264 2.71959C1.54475 2.74286 1.5458 2.76621 1.54578 2.78956C1.53887 11.5621 8.37562 18.4611 17.2059 18.4542C17.2292 18.4542 17.2525 18.4552 17.2757 18.4573C17.8949 18.5132 18.4633 17.9847 18.4609 17.3737L18.4609 17.3706V14.5914C18.4609 14.588 18.4609 14.5845 18.4609 14.581C18.461 14.5781 18.461 14.5752 18.4611 14.5723C18.4677 14.307 18.3764 14.0483 18.2042 13.8455C18.0977 13.72 17.875 13.5543 17.5156 13.382C17.1689 13.2158 16.7486 13.0688 16.3061 12.9539C15.3845 12.7144 14.5316 12.6546 14.1448 12.737C13.9089 12.7872 13.66 12.942 13.3593 13.2252C13.212 13.3638 13.0677 13.5182 12.9124 13.6875C12.8911 13.7107 12.8694 13.7344 12.8474 13.7585C12.7159 13.9023 12.5732 14.0584 12.4311 14.2002C12.1864 14.4445 11.8087 14.4954 11.508 14.3248C9.06376 12.9376 7.03985 10.9178 5.64982 8.47802C5.47814 8.17669 5.52933 7.79773 5.77481 7.55275C5.91692 7.41094 6.0733 7.26849 6.21741 7.13723C6.2415 7.11528 6.26525 7.09365 6.28853 7.07239C6.45816 6.91746 6.61282 6.77336 6.75177 6.62641C7.03569 6.32612 7.1903 6.07811 7.2404 5.84367C7.32251 5.4594 7.26319 4.6124 7.02475 3.69524C6.91032 3.25506 6.76404 2.83652 6.59862 2.49075C6.42724 2.13252 6.26201 1.90895 6.13628 1.80103ZM5.40505 0.000160025C6.0403 -0.00509612 6.65617 0.219838 7.13827 0.633625C7.49808 0.942449 7.77509 1.38506 7.98643 1.82682C8.20373 2.28104 8.38065 2.79632 8.51371 3.30815C8.77026 4.295 8.90308 5.4248 8.74488 6.16515C8.60736 6.80873 8.22562 7.30688 7.86965 7.68336C7.68865 7.8748 7.49749 8.05175 7.32606 8.20833C7.31626 8.21728 7.30654 8.22615 7.2969 8.23494C8.42608 10.0325 9.94863 11.5518 11.7503 12.6785C11.7596 12.6684 11.769 12.6581 11.7785 12.6477C11.9354 12.4766 12.1127 12.2858 12.3046 12.1052C12.6819 11.7498 13.1807 11.3693 13.8245 11.2322C14.5664 11.0743 15.7013 11.2072 16.693 11.4649C17.2072 11.5984 17.7248 11.7762 18.1807 11.9947C18.6239 12.2072 19.0684 12.4863 19.377 12.8498L19.377 12.8499C19.7913 13.3379 20.0127 13.9604 19.9993 14.6002V17.369C20.0045 18.8698 18.6848 20.1068 17.1749 19.9926C7.51603 19.9834 0.0166035 12.4134 0.00733198 2.82068C-0.106823 1.31436 1.12758 0.00156253 2.62305 0.000160378L5.40505 0.000160025ZM11.8091 4.21172C11.8904 3.79475 12.2944 3.52267 12.7114 3.60402C13.576 3.77269 14.4797 4.16115 15.1593 4.84071C15.8389 5.52028 16.2273 6.42406 16.396 7.28863C16.4773 7.7056 16.2052 8.10956 15.7883 8.1909C15.3713 8.27224 14.9673 8.00016 14.886 7.58319C14.7597 6.93564 14.4813 6.33839 14.0714 5.92858C13.6616 5.51874 13.0644 5.24033 12.4168 5.114C11.9998 5.03265 11.7278 4.62869 11.8091 4.21172Z"
+                    fill="#1C1D1E" />
+                </svg>
+
+              </label>
+              <input type="number" id="form_contact" placeholder="Номер телефона">
+            </div>
+            <button class="free_btn application_element">заказать
+
+            </button>
+          </div>
+
+          <div class="free_confirm">
+            <input type="checkbox" id="free_confirmID">
+            <label for="free_confirmID">Согласие с политикой обработки персональных данных</label>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="maps">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d183.81478692679872!2d69.28583916729357!3d41.33833884518518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b52ec158147%3A0xe59dfdb886a837da!2z0JHRjtGA0L4g0L_QtdGA0LXQstC-0LTQvtCyINCyINCi0LDRiNC60LXQvdGC0LUgIkVERU0gVHJhbnMi!5e1!3m2!1sru!2s!4v1688445819789!5m2!1sru!2s"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      class="my_map"></iframe>
+  </section>
+
+  <footer>
+    <div class="main_footer">
+      <div class="container">
+        <div class="main_footer__wrapper">
+          <div class="footer_item">
+            <div class="footer_links">
+              <a class="nav-link active" aria-current="page" href="/">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.6643 2.25256C10.2855 1.91581 9.7145 1.91581 9.3357 2.25256L9.33566 2.25259L6.16437 5.07149L6.16436 5.07149L4.00001 6.99537V14.3241C4.00001 15.2951 4.00213 15.9228 4.06431 16.3853C4.12263 16.8191 4.21678 16.955 4.29291 17.0312C4.36904 17.1073 4.50498 17.2014 4.93871 17.2598C5.40121 17.3219 6.02892 17.3241 7 17.3241V14.3241C7 12.6672 8.34312 11.3241 10 11.3241C11.6569 11.3241 13 12.6672 13 14.3241L13 17.3241C13.9711 17.3241 14.5988 17.3219 15.0613 17.2598C15.495 17.2014 15.631 17.1073 15.7071 17.0312C15.7832 16.955 15.8774 16.8191 15.9357 16.3853C15.9979 15.9228 16 15.2951 16 14.3241V6.99537L13.8356 5.07149L10.6643 2.25259L10.6643 2.25256ZM11 17.3241V14.3241C11 13.7718 10.5523 13.3241 10 13.3241C9.44769 13.3241 9 13.7718 9 14.3241V17.3241H11ZM8 19.3241H12H13L13.0658 19.3241H13.0659C13.9523 19.3241 14.7161 19.3242 15.3278 19.2419C15.9833 19.1538 16.6116 18.955 17.1213 18.4454C17.631 17.9357 17.8297 17.3074 17.9178 16.6518C18.0001 16.0402 18 15.2764 18 14.3899L18 14.3241V8.77315L18.3356 9.07149C18.7484 9.43841 19.3805 9.40122 19.7474 8.98844C20.1143 8.57566 20.0771 7.94359 19.6644 7.57667L15.1644 3.57667L14.5427 4.27608L15.1644 3.57667L11.9931 0.757796L11.9931 0.757765C10.8565 -0.252588 9.14352 -0.252588 8.00694 0.757765L8.00691 0.757796L4.83564 3.57667L4.83564 3.57667L0.335646 7.57667C-0.0771358 7.94359 -0.114316 8.57566 0.252601 8.98844C0.619519 9.40122 1.25159 9.43841 1.66437 9.07149L2.00001 8.77315V14.3241L2.00001 14.3899C1.99996 15.2764 1.99991 16.0402 2.08215 16.6518C2.17028 17.3074 2.36903 17.9357 2.87868 18.4454C3.38834 18.955 4.01669 19.1538 4.67221 19.2419C5.28386 19.3242 6.04766 19.3241 6.93412 19.3241H6.93417L7 19.3241H8Z"
+                    fill="white" />
+                </svg>
+                <span>главная</span>
+              </a>
+
+              <a class="nav-link active" aria-current="page" href="technologies.html">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5"
+                    d="M18.5251 7.21752H17.5244C17.4529 7.02407 17.3743 6.83455 17.2877 6.64699L18.0005 5.94137C18.2897 5.68628 18.4707 5.31445 18.4707 4.90065C18.4707 4.54325 18.3356 4.21733 18.1133 3.97141L18.1146 3.97272L16.0306 1.88865C15.786 1.66699 15.46 1.5319 15.1026 1.5319C14.6882 1.5319 14.3163 1.71421 14.0619 2.00275L13.3517 2.71231C13.1648 2.6264 12.9759 2.54771 12.7825 2.47623L12.7877 1.47551C12.7897 1.44796 12.791 1.41583 12.791 1.38304C12.791 0.643321 12.2113 0.0393468 11.4814 0H8.52974C7.79592 0.0386911 7.21555 0.643321 7.21555 1.3837C7.21555 1.41583 7.21687 1.44796 7.21883 1.4801V1.47551V2.47492C7.02538 2.5464 6.83586 2.62509 6.6483 2.71165L5.944 2.00079C5.6889 1.71028 5.31641 1.52731 4.90196 1.52731C4.54456 1.52731 4.21864 1.6624 3.97338 1.88471L3.97469 1.8834L1.88996 3.96813C1.66831 4.21274 1.53322 4.53866 1.53322 4.89606C1.53322 5.31117 1.71552 5.683 2.00472 5.93678L2.71296 6.64568C2.6264 6.83389 2.54771 7.02341 2.47557 7.21752L1.47551 7.21293C1.44796 7.21096 1.41583 7.20965 1.3837 7.20965C0.643977 7.20965 0.0393468 7.79002 0 8.5199V11.4709C0.0386911 12.2047 0.643977 12.7858 1.38435 12.7858C1.41649 12.7858 1.44862 12.7844 1.4801 12.7825H1.47551H2.47557C2.54705 12.9759 2.62575 13.1655 2.71231 13.353L2.00144 14.0553C1.71093 14.3111 1.52862 14.6836 1.52862 15.0994C1.52862 15.4568 1.66372 15.7833 1.88603 16.0292L1.88471 16.0279L3.96944 18.112C4.19175 18.333 4.498 18.4694 4.83638 18.4694C4.84097 18.4694 4.84556 18.4694 4.85015 18.4694H4.8495C5.27772 18.4609 5.66267 18.2812 5.93941 17.9959L6.64765 17.2877C6.83586 17.3743 7.02603 17.4529 7.22014 17.5251L7.21555 18.5245C7.21359 18.552 7.21228 18.5842 7.21228 18.6163C7.21228 19.356 7.79264 19.9607 8.52253 20H11.4742C12.2074 19.9607 12.7877 19.3567 12.7877 18.617C12.7877 18.5842 12.7864 18.552 12.7844 18.5206V18.5252V17.5244C12.9786 17.4523 13.1681 17.3736 13.3563 17.287L14.0573 17.9946C14.3347 18.2799 14.719 18.4596 15.1459 18.4688H15.1485C15.1525 18.4688 15.1577 18.4688 15.1623 18.4688C15.5 18.4688 15.8063 18.333 16.0299 18.114L18.1133 16.0306C18.333 15.8083 18.4681 15.5027 18.4681 15.1649C18.4681 15.159 18.4681 15.1531 18.4681 15.1466C18.4596 14.7197 18.2812 14.3367 17.9972 14.0599L17.2883 13.351C17.3743 13.1641 17.4529 12.9753 17.5244 12.7818L18.5245 12.7864C18.552 12.7884 18.5835 12.7897 18.6156 12.7897C19.356 12.7897 19.9607 12.2093 19.9993 11.4788V8.52777C19.96 7.79395 19.356 7.21359 18.6156 7.21359C18.5835 7.21359 18.5514 7.2149 18.5192 7.21687H18.5238L18.5251 7.21752ZM18.3612 11.1476L16.9434 11.1404C16.9264 11.1404 16.9119 11.1489 16.8949 11.1502C16.8339 11.1561 16.7775 11.1673 16.7237 11.185L16.729 11.1837C16.5257 11.2283 16.3584 11.3562 16.2627 11.5293L16.2607 11.5326C16.2293 11.5791 16.2011 11.6322 16.1794 11.6886L16.1775 11.6939C16.1722 11.7096 16.1597 11.7208 16.1552 11.7372C16.0043 12.2644 15.8096 12.7228 15.5663 13.1504L15.5827 13.1189C15.5735 13.1353 15.5741 13.1543 15.5656 13.1714C15.5466 13.2127 15.5309 13.2619 15.519 13.3123L15.5184 13.3176C15.5033 13.3648 15.4922 13.4199 15.4869 13.4763V13.4796C15.4856 13.4973 15.4843 13.5176 15.4843 13.5379C15.4843 13.675 15.5243 13.8029 15.5932 13.9104L15.5912 13.9078C15.6207 13.9655 15.6541 14.0147 15.6922 14.0599L15.6915 14.0586C15.7027 14.0711 15.7059 14.0868 15.7178 14.0986L16.7204 15.1026L15.1013 16.7204L14.1072 15.7178C14.094 15.704 14.0757 15.7 14.0619 15.6876C14.0226 15.6548 13.978 15.6246 13.9307 15.5991L13.9268 15.5971C13.7989 15.5256 13.6455 15.4836 13.4829 15.4836C13.4815 15.4836 13.4802 15.4836 13.4789 15.4836C13.4291 15.4889 13.3838 15.4981 13.3405 15.5099L13.3464 15.5086C13.2796 15.5217 13.2205 15.5413 13.1655 15.5669L13.17 15.565C13.1556 15.5722 13.1392 15.5715 13.1248 15.5794C12.7274 15.8063 12.2677 16.0017 11.785 16.1427L11.7391 16.1538C11.7214 16.1591 11.7096 16.1716 11.6926 16.1781C11.6375 16.1998 11.5896 16.2247 11.5457 16.2542L11.5483 16.2522C11.4991 16.2791 11.4571 16.308 11.4178 16.3407L11.4191 16.3394C11.3844 16.3735 11.3522 16.4116 11.324 16.4516L11.3221 16.4542C11.2545 16.5283 11.2066 16.6208 11.187 16.7237L11.1863 16.727C11.1706 16.7755 11.1581 16.8319 11.1529 16.8903V16.8936C11.1516 16.9106 11.143 16.925 11.143 16.9428L11.1424 18.3605H8.85304L8.86025 16.9467C8.86025 16.9283 8.85107 16.9126 8.84976 16.8949C8.84451 16.8345 8.83271 16.7788 8.81566 16.7257L8.81697 16.7309C8.77238 16.5257 8.64319 16.3571 8.46875 16.2607L8.46482 16.2588C8.41891 16.2279 8.36645 16.2004 8.31071 16.1788L8.30546 16.1768C8.28972 16.1716 8.27792 16.1591 8.26152 16.1545C7.73297 16.0037 7.27326 15.8082 6.84438 15.5643L6.87586 15.5807C6.86078 15.5722 6.84307 15.5728 6.82799 15.5656C6.78077 15.544 6.72569 15.5256 6.66798 15.5138L6.66273 15.5131C6.6024 15.4941 6.53289 15.4836 6.46075 15.4836C6.31582 15.4836 6.18139 15.5269 6.06925 15.6017L6.07187 15.6004C6.02203 15.6266 5.97941 15.6555 5.94006 15.6882L5.94137 15.6869C5.9276 15.6994 5.9099 15.7033 5.89678 15.7164L4.89409 16.7191L3.27431 15.1L4.27897 14.1058C4.29208 14.0927 4.29668 14.075 4.30848 14.0619C4.34324 14.0206 4.37471 13.974 4.4016 13.9248L4.40357 13.9209C4.42783 13.8829 4.45013 13.8396 4.46849 13.7937L4.47046 13.7884C4.49538 13.6966 4.51112 13.5911 4.51374 13.4822V13.4802C4.50849 13.4258 4.49866 13.3766 4.48488 13.3287L4.4862 13.3346C4.47308 13.273 4.45537 13.2186 4.43177 13.1674L4.43373 13.172C4.42586 13.1556 4.42652 13.1379 4.41734 13.1222C4.18978 12.7254 3.99436 12.2664 3.85468 11.7837L3.84353 11.7391C3.83894 11.7221 3.82582 11.7096 3.81992 11.6932C3.79763 11.6368 3.77271 11.5883 3.74254 11.5437L3.74451 11.547C3.71828 11.4985 3.68942 11.4565 3.65729 11.4178L3.6586 11.4191C3.6245 11.3844 3.58712 11.3529 3.54777 11.3247L3.54515 11.3227C3.5058 11.2893 3.46121 11.2591 3.41399 11.2335L3.41006 11.2316C3.37268 11.2145 3.32743 11.1994 3.28153 11.1883L3.27628 11.187C3.22579 11.1699 3.16677 11.1575 3.10643 11.1522H3.10315C3.0861 11.1509 3.07233 11.1424 3.05528 11.1424L1.63748 11.1417V8.85173L3.05528 8.85894C3.16021 8.85763 3.25923 8.83599 3.35038 8.79861L3.34514 8.80058C3.38055 8.78484 3.41006 8.7691 3.43826 8.75139L3.43498 8.75336C3.494 8.72254 3.54515 8.68778 3.59171 8.64844L3.5904 8.64909C3.6186 8.62352 3.64417 8.59729 3.66778 8.56909L3.66909 8.56778C3.70582 8.52515 3.73861 8.47728 3.76549 8.42678L3.76746 8.42219C3.78517 8.39137 3.80287 8.3553 3.8173 8.31792L3.81927 8.31268C3.82582 8.29431 3.83828 8.27989 3.84353 8.26153C3.99436 7.73362 4.18913 7.27392 4.43308 6.8457L4.41668 6.87717C4.42586 6.86143 4.42521 6.84307 4.43308 6.82733C4.45341 6.7834 4.47046 6.73093 4.48226 6.67716L4.48292 6.67191C4.49603 6.61552 4.5039 6.55059 4.5039 6.4837C4.5039 6.27582 4.4298 6.08565 4.30717 5.93678L4.30848 5.93809C4.29733 5.92498 4.2934 5.90858 4.28094 5.89678L3.27956 4.89409L4.89868 3.27497L5.89416 4.27897C5.93022 4.30848 5.97023 4.33602 6.0122 4.35897L6.01613 4.36094C6.04367 4.38258 6.0745 4.40357 6.10663 4.42259L6.11056 4.42455C6.21549 4.48226 6.34009 4.51767 6.4719 4.52161H6.47321L6.47649 4.52226C6.48436 4.52226 6.49157 4.51636 6.49879 4.51636C6.62076 4.51112 6.73421 4.47964 6.8352 4.42783L6.83061 4.4298C6.84504 4.42259 6.86143 4.42586 6.87652 4.41799C7.27326 4.19109 7.73231 3.99502 8.21496 3.85534L8.26021 3.84419C8.27661 3.8396 8.28776 3.82714 8.30349 3.82189C8.36317 3.79894 8.41498 3.77205 8.46285 3.73992L8.46023 3.74188C8.50548 3.71697 8.54417 3.69008 8.58023 3.66057L8.57892 3.66188C8.61696 3.62516 8.65106 3.58515 8.68123 3.54187L8.68319 3.53925C8.71336 3.50252 8.74156 3.46121 8.76582 3.41793L8.76779 3.41399C8.78615 3.37334 8.80254 3.32546 8.81369 3.27628L8.815 3.27103C8.83074 3.22316 8.84255 3.16742 8.84779 3.10906V3.10578C8.8491 3.08807 8.85763 3.07364 8.85763 3.05594L8.85829 1.63814H11.1476L11.1404 3.052C11.1404 3.07037 11.1496 3.08545 11.1502 3.10381C11.1555 3.1648 11.1673 3.22054 11.1843 3.27431L11.183 3.26907C11.1955 3.32415 11.2119 3.37202 11.2322 3.41793L11.2302 3.41268C11.2565 3.46056 11.284 3.50187 11.3155 3.5399L11.3142 3.53859C11.3457 3.5845 11.3804 3.6245 11.4178 3.66122C11.4526 3.69008 11.4912 3.71631 11.5319 3.73992L11.5358 3.74188C11.5804 3.77205 11.6322 3.79894 11.6867 3.81992L11.6919 3.82189C11.7083 3.82779 11.7201 3.84025 11.7372 3.84484C12.2644 3.99502 12.7228 4.19044 13.1504 4.43439L13.1195 4.41799C13.134 4.42586 13.1497 4.42259 13.1641 4.4298C13.2605 4.47964 13.374 4.51112 13.494 4.51636H13.496C13.5038 4.51636 13.5117 4.52226 13.5196 4.52226L13.5379 4.51702C13.6645 4.51177 13.7819 4.47833 13.8862 4.42324L13.8816 4.42521C13.9203 4.40357 13.953 4.38193 13.9839 4.35701L13.9819 4.35832C14.0265 4.33405 14.0652 4.30848 14.1006 4.27962L14.0993 4.28094L15.1033 3.2789L16.7224 4.89868L15.7184 5.89285C15.7053 5.90596 15.7007 5.92367 15.6882 5.93744C15.6535 5.97875 15.622 6.02531 15.5951 6.0745L15.5932 6.07843C15.5381 6.15909 15.5027 6.2568 15.4961 6.36304V6.36435C15.4876 6.40108 15.483 6.4437 15.483 6.48698C15.483 6.55059 15.4935 6.61158 15.5125 6.66863L15.5112 6.6647C15.5243 6.72634 15.542 6.78012 15.5656 6.83127L15.5636 6.82668C15.5715 6.84307 15.5709 6.86143 15.58 6.87783C15.8076 7.27392 16.003 7.73231 16.1427 8.21431L16.1538 8.2589C16.1591 8.27858 16.1722 8.293 16.1788 8.31137C16.1945 8.35202 16.2109 8.38547 16.2293 8.41826L16.2273 8.41432C16.3657 8.67467 16.6332 8.85042 16.9421 8.85632L18.3605 8.85697L18.3612 11.1476ZM10 6.55781C8.09889 6.55781 6.55715 8.09955 6.55715 10.0007C6.55715 11.9018 8.09889 13.4435 10 13.4435C11.9011 13.4435 13.4428 11.9018 13.4428 10.0007C13.4402 8.1002 11.9005 6.56043 10 6.55781ZM10 11.8041C9.00387 11.8041 8.1966 10.9968 8.1966 10.0007C8.1966 9.00453 9.00387 8.19726 10 8.19726C10.9961 8.19726 11.8034 9.00453 11.8034 10.0007C11.8021 10.9961 10.9955 11.8027 10 11.8041Z"
+                    fill="white" />
+                </svg>
+                <span>технологии</span>
+              </a>
+
+              <a class="nav-link active" aria-current="page" href="our_works.html">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.9475 5.29028C11.5895 5.09676 11.1589 5 10.6557 5H6.2V15H8.18839V11.2409H9.9881C10.0365 11.3474 10.0994 11.5022 10.1768 11.7054C10.2639 11.8989 10.3558 12.1166 10.4525 12.3585C10.559 12.6004 10.6654 12.8568 10.7718 13.1277C10.888 13.389 10.9944 13.6405 11.0911 13.8824C11.1976 14.1243 11.2895 14.3469 11.3669 14.5501C11.454 14.7436 11.5169 14.8936 11.5556 15H13.7036L11.9039 10.9071C12.1652 10.7717 12.3974 10.6023 12.6006 10.3991C12.8038 10.1863 12.9731 9.95888 13.1086 9.71698C13.2537 9.46541 13.3601 9.20416 13.4279 8.93324C13.5053 8.65264 13.544 8.38171 13.544 8.12046C13.544 7.76246 13.4859 7.39961 13.3698 7.03193C13.2634 6.65457 13.0892 6.31592 12.8473 6.01596C12.6151 5.71601 12.3151 5.47412 11.9475 5.29028ZM10.2058 9.44122H8.18839V6.7852H10.2058C10.6606 6.7852 11.0041 6.91098 11.2363 7.16255C11.4782 7.41413 11.5991 7.73343 11.5991 8.12046C11.5991 8.5075 11.483 8.8268 11.2508 9.07837C11.0186 9.32027 10.6702 9.44122 10.2058 9.44122Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 2C0 0.895431 0.895431 0 2 0H18C19.1046 0 20 0.895431 20 2V18C20 19.1046 19.1046 20 18 20H2C0.895431 20 0 19.1046 0 18V2ZM2 2H18V18H2V2Z"
+                      fill="white" />
+                  </g>
+                </svg>
+                <span>Наши работы</span>
+              </a>
+
+              <a class="nav-link active" aria-current="page" href="contact.html">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.5">
+                    <path
+                      d="M7.7291 10.7144C9.25739 10.7144 10.4963 9.47549 10.4963 7.94721C10.4963 6.41892 9.25739 5.18 7.7291 5.18C6.20081 5.18 4.96189 6.41892 4.96189 7.94721C4.96189 9.47549 6.20081 10.7144 7.7291 10.7144Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 8.17894C0 3.68052 3.22614 0 7.72456 0C12.223 0 15.4491 3.58965 15.4491 8.17894C15.4491 12.6451 10.5003 17.5846 8.51775 19.5635C8.46309 19.618 8.41068 19.6704 8.3607 19.7203C8.27982 19.8085 8.18151 19.8789 8.07201 19.927C7.9625 19.9751 7.84418 20 7.72456 20C7.60493 20 7.48661 19.9751 7.37711 19.927C7.2676 19.8789 7.16929 19.8085 7.08842 19.7203L7.03306 19.665C5.1242 17.7566 0 12.6336 0 8.17894ZM13.6316 8.17894C13.6316 4.54386 11.087 1.81754 7.72456 1.81754C4.3621 1.81754 1.81754 4.77105 1.81754 8.17894C1.81754 11.5868 5.72526 15.7672 7.72456 17.8119C7.74761 17.7883 7.77092 17.7645 7.79447 17.7404C9.81345 15.6761 13.6316 11.7721 13.6316 8.17894Z"
+                      fill="white" />
+                  </g>
+                </svg>
+                <span>Контакты</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="footer_hr">
+
+          </div>
+          <div class="footer_item">
+            <div class="footer_links">
+              <a href="" class="nav-link"> <span>
+
+                  Объемные логотипы </span></a>
+              <a href="" class="nav-link"> <span>
+                  Логотипы с подсветкой
+                </span> </a>
+              <a href="" class="nav-link"> <span>
+
+                  Вывеска для офиса </span></a>
+              <a href="" class="nav-link"> <span>
+
+                  интерьерная реклама </span></a>
+            </div>
+          </div>
+          <div class="footer_hr">
+
+          </div>
+          <div class="footer_item">
+            <div class="contact">
+              <div class="contact_numbers">
+                <a href="tel:++7(917)236-65-74">+7 (917) 236-65-74</a>
+                <a href="tel:++7(917)236-65-74">+7 (917) 236-65-74</a>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="footer_hr">
+
+          </div>
+          <div class="footer_item">
+            <div class="contact_social">
+              <a class="email_address" href="mailto:pochta@mail.ru">pochta@mail.ru</a>
+              <div class="social_links">
+                <a href="">
+                  <img src="./Images/header_images/1.svg" alt=""></a>
+                <a href="">
+                  <img src="./Images/header_images/2.svg" alt=""></a>
+                <a href="">
+                  <img src="./Images/header_images/3.svg" alt=""></a>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="footer_hr">
+
+          </div>
+          <div class="footer_item">
+            <a href="" class="footer_location">наб. Обводного канала, 199-201, лит. Н,
+              ДЦ «Обводный Двор», офис 14, этаж 1</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second_footer">
+      <div class="container">
+        <span>
+          © Интерьерная реклама, 2023
+        </span>
+        <a href=""> Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

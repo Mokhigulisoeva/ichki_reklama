@@ -1,0 +1,14 @@
+.maps{
+    .my_map{
+        width: 100%;
+        height: 360px;
+        vertical-align: middle;
+    }
+}
+@media screen and (max-width:576px) {
+    .maps{
+        .my_map{
+            height: 278px;
+        }
+    }
+}
