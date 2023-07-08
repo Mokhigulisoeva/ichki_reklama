@@ -588,7 +588,8 @@
     margin-bottom: 21px;
   }
   .free .container .row .free_form .free_forum .free_confirm {
-    width: 60%;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .information {
@@ -706,6 +707,10 @@
   }
   .application .container .application_wrapper .application_element {
     width: 100% !important;
+  }
+  .application .container .free_confirm {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .maps .my_map {
