@@ -27,6 +27,7 @@
             margin-bottom: 78px;
             margin-top: 48px;
 
+
             .mycarousel {
                 .carousel-indicators {
                     margin: 0;
@@ -97,6 +98,9 @@
 
                 .mycarousel {
                     height: 248px;
+                    .carousel-indicators{
+                        bottom: -17px;
+                    }
                    
 
                     .carousel-inner {

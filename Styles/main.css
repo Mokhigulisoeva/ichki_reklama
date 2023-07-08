@@ -546,6 +546,7 @@
 .free .container .row .free_form .free_forum .free_confirm {
   display: flex;
   align-items: center;
+  justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
@@ -555,7 +556,7 @@
 .free .container .row .free_form .free_forum .free_confirm label {
   color: var(--1, #A8A9AA);
   font-size: 11px;
-  font-family: PF DinDisplay Pro;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -587,8 +588,7 @@
     margin-bottom: 21px;
   }
   .free .container .row .free_form .free_forum .free_confirm {
-    width: 70%;
-    margin: 0 auto;
+    width: 60%;
   }
 }
 .information {
@@ -661,6 +661,9 @@
   .information .container .information_carousel .mycarousel {
     height: 248px;
   }
+  .information .container .information_carousel .mycarousel .carousel-indicators {
+    bottom: -17px;
+  }
   .information .container .information_carousel .mycarousel .carousel-inner .carousel-item .images {
     width: 100%;
     height: 100%;
@@ -687,6 +690,8 @@
   margin-bottom: 0 !important;
 }
 .application .container .free_confirm {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
